@@ -22,6 +22,7 @@ export default {
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
+          container: "hsl(var(--primary-container))",
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
@@ -47,38 +48,53 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        sidebar: {
-          DEFAULT: "hsl(var(--sidebar-background))",
-          foreground: "hsl(var(--sidebar-foreground))",
-          primary: "hsl(var(--sidebar-primary))",
-          "primary-foreground": "hsl(var(--sidebar-primary-foreground))",
-          accent: "hsl(var(--sidebar-accent))",
-          "accent-foreground": "hsl(var(--sidebar-accent-foreground))",
-          border: "hsl(var(--sidebar-border))",
-          ring: "hsl(var(--sidebar-ring))",
+        surface: {
+          DEFAULT: "hsl(var(--surface))",
+          bright: "hsl(var(--surface-bright))",
+          dim: "hsl(var(--surface-dim))",
+          "container-low": "hsl(var(--surface-container-low))",
+          container: "hsl(var(--surface-container))",
+          "container-high": "hsl(var(--surface-container-high))",
+          "container-highest": "hsl(var(--surface-container-highest))",
+          "container-lowest": "hsl(var(--surface-container-lowest))",
+        },
+        "on-surface": {
+          DEFAULT: "hsl(var(--on-surface))",
+          variant: "hsl(var(--on-surface-variant))",
+        },
+        outline: {
+          DEFAULT: "hsl(var(--outline))",
+          variant: "hsl(var(--outline-variant))",
+        },
+        "primary-fixed": {
+          DEFAULT: "hsl(var(--primary-fixed))",
+          dim: "hsl(var(--primary-fixed-dim))",
+        },
+        tertiary: {
+          DEFAULT: "hsl(var(--tertiary))",
+          container: "hsl(var(--tertiary-container))",
         },
       },
+      fontFamily: {
+        headline: ["Noto Serif", "serif"],
+        body: ["Manrope", "sans-serif"],
+        label: ["Manrope", "sans-serif"],
+      },
       borderRadius: {
-        lg: "var(--radius)",
-        md: "calc(var(--radius) - 2px)",
-        sm: "calc(var(--radius) - 4px)",
+        lg: "0.25rem",
+        md: "calc(0.25rem - 2px)",
+        sm: "calc(0.25rem - 4px)",
+        xl: "0.5rem",
+        full: "0.75rem",
       },
       keyframes: {
         "accordion-down": {
-          from: {
-            height: "0",
-          },
-          to: {
-            height: "var(--radix-accordion-content-height)",
-          },
+          from: { height: "0" },
+          to: { height: "var(--radix-accordion-content-height)" },
         },
         "accordion-up": {
-          from: {
-            height: "var(--radix-accordion-content-height)",
-          },
-          to: {
-            height: "0",
-          },
+          from: { height: "var(--radix-accordion-content-height)" },
+          to: { height: "0" },
         },
       },
       animation: {
