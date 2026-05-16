@@ -1,5 +1,4 @@
 import { Phone, MessageCircle, Mail, MapPin } from "lucide-react";
-import mapHyderabad from "@/assets/map-hyderabad.jpg";
 
 const ContactSection = () => {
   return (
@@ -46,7 +45,7 @@ const ContactSection = () => {
                   <p className="text-xs font-label uppercase text-secondary">
                     Email
                   </p>
-                  <p className="text-lg font-medium">sales@jjtools.com</p>
+                  <p className="text-lg font-medium">sales@bottleplus.com</p>
                 </div>
               </div>
             </div>
@@ -56,23 +55,14 @@ const ContactSection = () => {
               </button>
             </div>
           </div>
-          <div className="w-full lg:w-[45%] h-96 lg:h-auto relative">
-            <div className="absolute inset-0 bg-primary/5">
-              <img
-                src={mapHyderabad}
-                alt="Map of Hyderabad HQ Location"
-                className="w-full h-full object-cover grayscale"
-                loading="lazy"
-                width={800}
-                height={600}
-              />
-            </div>
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="bg-surface-container-lowest/90 backdrop-blur p-6 rounded-xl shadow-2xl flex flex-col items-center">
-                <MapPin className="w-10 h-10 text-primary mb-2" />
-                <p className="font-bold text-on-surface">Hyderabad HQ</p>
-                <p className="text-xs text-secondary">Akshaya Enclave</p>
-              </div>
+          <div className="w-full lg:w-[45%] h-96 lg:h-auto relative bg-gradient-to-br from-primary/10 to-primary/30 flex items-center justify-center p-12">
+            <div className="bg-surface-container-lowest/90 backdrop-blur p-8 rounded-xl shadow-2xl flex flex-col items-center text-center max-w-xs">
+              <MapPin className="w-10 h-10 text-primary mb-3" />
+              <p className="font-bold text-on-surface text-lg">Reach Out Anywhere</p>
+              <p className="text-sm text-secondary mt-2">
+                We ship our copper craft worldwide. Connect with our team online,
+                anytime.
+              </p>
             </div>
           </div>
         </div>
