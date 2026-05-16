@@ -1,5 +1,4 @@
 import { Phone, MessageCircle, Mail, MapPin } from "lucide-react";
-import mapHyderabad from "@/assets/map-hyderabad.jpg";
 
 const ContactSection = () => {
   return (
