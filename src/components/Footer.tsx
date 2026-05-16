@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <footer className="bg-surface-container-low w-full py-20">
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-12 px-12 max-w-7xl mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-12 px-12 max-w-7xl mx-auto">
         <div className="col-span-1 space-y-6">
           <div className="text-xl font-headline text-on-surface">Bottle+</div>
           <p className="text-secondary text-sm leading-relaxed">
@@ -47,18 +47,6 @@ const Footer = () => {
               </a>
             </li>
           </ul>
-        </div>
-        <div className="space-y-6">
-          <h4 className="text-primary font-headline text-sm font-bold uppercase tracking-widest">
-            Connect
-          </h4>
-          <p className="text-secondary text-sm leading-relaxed">
-            GST Registered.
-            <br />
-            7+ Years Verified.
-            <br />
-            4.5 Stars Rated.
-          </p>
         </div>
       </div>
       <div className="mt-20 pt-8 border-t border-outline-variant/10 text-center">
